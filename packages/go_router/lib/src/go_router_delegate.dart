@@ -441,19 +441,19 @@ class GoRouterDelegate extends RouterDelegate<Uri>
 
     assert(matchStacks.isNotEmpty, 'no routes for location: $location');
     assert(() {
-      if (matchStacks.length > 1) {
-        final StringBuffer sb = StringBuffer()
-          ..writeln('too many routes for location: $location');
+      // if (matchStacks.length > 1) {
+      //   final StringBuffer sb = StringBuffer()
+      //     ..writeln('too many routes for location: $location');
 
-        for (final List<GoRouteMatch> stack in matchStacks) {
-          sb.writeln(
-              '\t${stack.map((GoRouteMatch m) => m.route.path).join(' => ')}');
-        }
+      //   for (final List<GoRouteMatch> stack in matchStacks) {
+      //     sb.writeln(
+      //         '\t${stack.map((GoRouteMatch m) => m.route.path).join(' => ')}');
+      //   }
 
-        assert(false, sb.toString());
-      }
+      //   assert(false, sb.toString());
+      // }
 
-      assert(matchStacks.length == 1);
+      // assert(matchStacks.length == 1);
       final GoRouteMatch match = matchStacks.first.last;
       final String loc1 = _addQueryParams(match.subloc, match.queryParams);
       final Uri uri2 = Uri.parse(location);
