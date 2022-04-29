@@ -1,3 +1,31 @@
+## NEXT
+
+* [tests] Moved test script to enable CI.
+
+## 3.0.3
+
+* Adds ability for generators to do AST validation.  This can help generators
+  without complete implementations to report gaps in coverage.
+
+## 3.0.2
+
+* Fixes non-nullable classes and enums as fields.
+* Fixes nullable collections as return types.
+
+## 3.0.1
+
+* Enables NNBD for the Pigeon tool itself.
+* [tests] Updates legacy Dart commands.
+
+## 3.0.0
+
+* **BREAKING CHANGE**: Removes the `--dart_null_safety` flag. Generated Dart
+  now always uses nullability annotations, and thus requires Dart 2.12 or later.
+
+## 2.0.4
+
+* Fixes bug where Dart `FlutterApi`s would assert that a nullable argument was nonnull.
+
 ## 2.0.3
 
 * Makes the generated Java Builder class final.
@@ -5,7 +33,7 @@
 ## 2.0.2
 
 * Fixes Java crash for nullable nested type.
-  
+
 * ## 2.0.1
 
 * Adds support for TaskQueues for serial background execution.
