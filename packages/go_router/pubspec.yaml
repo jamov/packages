@@ -1,6 +1,6 @@
 name: go_router
 description: go_router but allows matching multiple routes
-version: 1.0.0
+version: 3.1.0
 repository: https://github.com/jamov/packages/tree/main/packages/go_router
 
 environment:
