@@ -140,6 +140,8 @@ extension $_extensionName on $_className {
   String get location => GoRouteData.\$location($_locationArgs,$_locationQueryParams);
   
   void go(BuildContext buildContext) => buildContext.go(location, extra: this);
+  
+  void push(BuildContext buildContext) => buildContext.push(location, extra: this);
 } 
 ''';
 
