@@ -1,7 +1,7 @@
 name: go_router
-description: go_router but allows matching multiple routes
-version: 3.1.0
+version: 3.1.1
 repository: https://github.com/jamov/packages/tree/main/packages/go_router
+description: go_router but allow case-sensitive parameters
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
